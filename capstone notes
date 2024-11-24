@@ -1,0 +1,43 @@
+thought process
+scanning t00ls:
+
+from ih
+nmap ip (from proxychains)
+./scan.sh
+nc ip port
+wget -r ftp://ip:portifyouneedone
+wget -r http://ip:portoptional
+
+on a device
+one liner sauce (run on device in question to see what it can see)
+arp -a ?
+ifconfig (see what networks it knows about)
+ip a (ifconfig)
+ss -nltp (see ports)
+
+expectations for monday:
+-----------------------
+you will no longer have access to your internet host
+take scan.sh
+download online notes to local desktop
+start by 0800
+6hr exam, split in half
+if you wget a file and its freaking empty, raise your hand
+
+it will not be basic password anymore
+
+for submitting answers, you have to combine the salt of the box and the actual answer to the question
+we will submit questions using md5sum
+
+mostly 3 attempts on questions
+
+some will be multiple choice
+you will only submit the letter
+echo B | md5sum
+those have 2 attempts
+
+salt will always be in the home directory of the box
+
+you ahve to find the creds in the environment for the medium and hard tracks
+cant use ai
+
