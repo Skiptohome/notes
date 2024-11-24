@@ -1,0 +1,9 @@
+BIH -------- T1 ------[firewale] -------- T2 --------- T3
+ssh T1@[floatIP] -p #### -L 1111:localhost:1234
+ssh T1@localhost -p 1111 -L 2222:[T2IP]:23
+telnet localhost 2222
+------ on T2 ---------
+ssh T1@[T1IP] -p 1234 -R 3333:localhost:4321
+------- on BIH --------
+ssh T1@localhost -p 1111 -L 4444:localhost:3333
+ssh T2@localhost -p 4444 -D 9050
