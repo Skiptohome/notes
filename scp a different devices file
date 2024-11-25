@@ -1,0 +1,1 @@
+proxychains scp tgt@[tgtIP]:/usr/share/cctc/gyatt.txt
